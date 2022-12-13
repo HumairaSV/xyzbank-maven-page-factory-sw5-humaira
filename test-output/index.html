@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Bank_Test">
+              <span class="suite-name border-passed">Bank Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Bank_Test">
+                    <span>C:\Users\humai\IdeaProjects\xyzbank-maven-page-factory-sw5\src\test\java\resources\runners\banktest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Bank_Test">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Bank_Test">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Bank_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Bank_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Bank_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Bank_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Bank_Test" class="hide-methods passed suite-Bank_Test"> (hide)</a> <!-- hide-methods passed suite-Bank_Test -->
+                      <a href="#" panel-name="suite-Bank_Test" class="show-methods passed suite-Bank_Test"> (show)</a> <!-- show-methods passed suite-Bank_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Bank_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Bank_Test" title="com.bank.testsuite.BankTest" hash-for-method="bankManagerShouldAddCustomerSuccessfully">bankManagerShouldAddCustomerSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Bank_Test" title="com.bank.testsuite.BankTest" hash-for-method="bankManagerShouldOpenAccountSuccessfully">bankManagerShouldOpenAccountSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Bank_Test" title="com.bank.testsuite.BankTest" hash-for-method="customerShouldDepositMoneySuccessfully">customerShouldDepositMoneySuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Bank_Test" title="com.bank.testsuite.BankTest" hash-for-method="customerShouldLoginAndLogoutSuccessfully">customerShouldLoginAndLogoutSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Bank_Test" title="com.bank.testsuite.BankTest" hash-for-method="customerShouldWithdrawMoneySuccessfully">customerShouldWithdrawMoneySuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Bank_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Bank_Test" class="panel Bank_Test">
+          <div class="suite-Bank_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bank.testsuite.BankTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankManagerShouldAddCustomerSuccessfully">
+                  </a> <!-- bankManagerShouldAddCustomerSuccessfully -->
+                  <span class="method-name">bankManagerShouldAddCustomerSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankManagerShouldOpenAccountSuccessfully">
+                  </a> <!-- bankManagerShouldOpenAccountSuccessfully -->
+                  <span class="method-name">bankManagerShouldOpenAccountSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="customerShouldDepositMoneySuccessfully">
+                  </a> <!-- customerShouldDepositMoneySuccessfully -->
+                  <span class="method-name">customerShouldDepositMoneySuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="customerShouldLoginAndLogoutSuccessfully">
+                  </a> <!-- customerShouldLoginAndLogoutSuccessfully -->
+                  <span class="method-name">customerShouldLoginAndLogoutSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="customerShouldWithdrawMoneySuccessfully">
+                  </a> <!-- customerShouldWithdrawMoneySuccessfully -->
+                  <span class="method-name">customerShouldWithdrawMoneySuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Bank_Test-class-passed -->
+        </div> <!-- panel Bank_Test -->
+        <div panel-name="test-xml-Bank_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\humai\IdeaProjects\xyzbank-maven-page-factory-sw5\src\test\java\resources\runners\banktest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Bank Test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.bank.customlisteners.CustomListeners&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Bank Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bank.testsuite.BankTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Bank Test --&gt;
+&lt;/suite&gt; &lt;!-- Bank Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Bank_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Bank Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Bank Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Bank_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Bank Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bankManagerShouldAddCustomerSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">bankManagerShouldOpenAccountSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">customerShouldDepositMoneySuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">customerShouldLoginAndLogoutSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">customerShouldWithdrawMoneySuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bankManagerShouldAddCustomerSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bankManagerShouldOpenAccountSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Bank_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Bank Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Bank_Test');
+function tableData_Bank_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'customerShouldWithdrawMoneySuccessfully')
+data.setCell(0, 2, 'com.bank.testsuite.BankTest')
+data.setCell(0, 3, 6430);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'customerShouldDepositMoneySuccessfully')
+data.setCell(1, 2, 'com.bank.testsuite.BankTest')
+data.setCell(1, 3, 1391);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'customerShouldLoginAndLogoutSuccessfully')
+data.setCell(2, 2, 'com.bank.testsuite.BankTest')
+data.setCell(2, 3, 1085);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'bankManagerShouldOpenAccountSuccessfully')
+data.setCell(3, 2, 'com.bank.testsuite.BankTest')
+data.setCell(3, 3, 983);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'bankManagerShouldAddCustomerSuccessfully')
+data.setCell(4, 2, 'com.bank.testsuite.BankTest')
+data.setCell(4, 3, 549);
+window.suiteTableData['Bank_Test']= { tableData: data, tableDiv: 'times-div-Bank_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-Bank_Test">
+              </div> <!-- times-div-Bank_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Bank_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Bank Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">customerShouldLoginAndLogoutSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Enter name in the First Name Field [[ChromeDriver: chrome on WINDOWS (6ac3a3b99f9a4fd35015a4bd9ade6898)] -> xpath: //input[@placeholder = 'First Name']]</span>
+                <span class="reporter-method-output">Enter surname in the Last Name Field [[ChromeDriver: chrome on WINDOWS (6ac3a3b99f9a4fd35015a4bd9ade6898)] -> xpath: //input[@placeholder = 'Last Name']]</span>
+                <span class="reporter-method-output">Enter postcode in the Postcode Field [[ChromeDriver: chrome on WINDOWS (6ac3a3b99f9a4fd35015a4bd9ade6898)] -> xpath: //input[@placeholder = 'Post Code']]</span>
+                <span class="reporter-method-output">Click on Add Customer button [[ChromeDriver: chrome on WINDOWS (6ac3a3b99f9a4fd35015a4bd9ade6898)] -> xpath: //button[text()= 'Add Customer']]</span>
+                <span class="reporter-method-output">click on Ok on pop [[ChromeDriver: chrome on WINDOWS (6ac3a3b99f9a4fd35015a4bd9ade6898)] -> xpath: //input[@placeholder = 'First Name']]</span>
+                <span class="reporter-method-output">Verifying Logout Tab is displayed[[ChromeDriver: chrome on WINDOWS (6ac3a3b99f9a4fd35015a4bd9ade6898)] -> xpath: //button[text()= 'Logout']]</span>
+                <span class="reporter-method-output">Clicking on Logout button[[ChromeDriver: chrome on WINDOWS (6ac3a3b99f9a4fd35015a4bd9ade6898)] -> xpath: //button[text()= 'Logout']]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">customerShouldDepositMoneySuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Enter name in the First Name Field [[ChromeDriver: chrome on WINDOWS (9302888f42eb0862eadce94a39e5c231)] -> xpath: //input[@placeholder = 'First Name']]</span>
+                <span class="reporter-method-output">Enter surname in the Last Name Field [[ChromeDriver: chrome on WINDOWS (9302888f42eb0862eadce94a39e5c231)] -> xpath: //input[@placeholder = 'Last Name']]</span>
+                <span class="reporter-method-output">Enter postcode in the Postcode Field [[ChromeDriver: chrome on WINDOWS (9302888f42eb0862eadce94a39e5c231)] -> xpath: //input[@placeholder = 'Post Code']]</span>
+                <span class="reporter-method-output">Click on Add Customer button [[ChromeDriver: chrome on WINDOWS (9302888f42eb0862eadce94a39e5c231)] -> xpath: //button[text()= 'Add Customer']]</span>
+                <span class="reporter-method-output">click on Ok on pop [[ChromeDriver: chrome on WINDOWS (9302888f42eb0862eadce94a39e5c231)] -> xpath: //input[@placeholder = 'First Name']]</span>
+                <span class="reporter-method-output">Clicking on Deposit Tab[[ChromeDriver: chrome on WINDOWS (9302888f42eb0862eadce94a39e5c231)] -> xpath: //button[@ng-click= 'deposit()']]</span>
+                <span class="reporter-method-output">Enter amount[[ChromeDriver: chrome on WINDOWS (9302888f42eb0862eadce94a39e5c231)] -> xpath: //input[@ng-model= 'amount']]</span>
+                <span class="reporter-method-output">Clicking on Deposit button[[ChromeDriver: chrome on WINDOWS (9302888f42eb0862eadce94a39e5c231)] -> xpath: //button[text()= 'Deposit']]</span>
+                <span class="reporter-method-output">Verifying Deposit is successful[[ChromeDriver: chrome on WINDOWS (9302888f42eb0862eadce94a39e5c231)] -> xpath: //span[text()= 'Deposit Successful']]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">customerShouldWithdrawMoneySuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Enter name in the First Name Field [[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //input[@placeholder = 'First Name']]</span>
+                <span class="reporter-method-output">Enter surname in the Last Name Field [[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //input[@placeholder = 'Last Name']]</span>
+                <span class="reporter-method-output">Enter postcode in the Postcode Field [[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //input[@placeholder = 'Post Code']]</span>
+                <span class="reporter-method-output">Click on Add Customer button [[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //button[text()= 'Add Customer']]</span>
+                <span class="reporter-method-output">click on Ok on pop [[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //input[@placeholder = 'First Name']]</span>
+                <span class="reporter-method-output">Clicking on Deposit Tab[[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //button[@ng-click= 'deposit()']]</span>
+                <span class="reporter-method-output">Enter amount[[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //input[@ng-model= 'amount']]</span>
+                <span class="reporter-method-output">Clicking on Deposit button[[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //button[text()= 'Deposit']]</span>
+                <span class="reporter-method-output">Clicking on Withdrawal Tab[[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //button[@ng-click= 'withdrawl()']]</span>
+                <span class="reporter-method-output">Enter amount[[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //input[@ng-model= 'amount']]</span>
+                <span class="reporter-method-output">Clicking on Withdraw button[[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //button[text()= 'Withdraw']]</span>
+                <span class="reporter-method-output">Verifying that Withdrawal is successful[[ChromeDriver: chrome on WINDOWS (d1a3327cf5591051c4bdfda2d8dadab1)] -> xpath: //span[text()= 'Transaction successful']]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bankManagerShouldAddCustomerSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Enter name in the First Name Field [[ChromeDriver: chrome on WINDOWS (c2680e2238a115f44a42fe5d5278cbcd)] -> xpath: //input[@placeholder = 'First Name']]</span>
+                <span class="reporter-method-output">Enter surname in the Last Name Field [[ChromeDriver: chrome on WINDOWS (c2680e2238a115f44a42fe5d5278cbcd)] -> xpath: //input[@placeholder = 'Last Name']]</span>
+                <span class="reporter-method-output">Enter postcode in the Postcode Field [[ChromeDriver: chrome on WINDOWS (c2680e2238a115f44a42fe5d5278cbcd)] -> xpath: //input[@placeholder = 'Post Code']]</span>
+                <span class="reporter-method-output">Click on Add Customer button [[ChromeDriver: chrome on WINDOWS (c2680e2238a115f44a42fe5d5278cbcd)] -> xpath: //button[text()= 'Add Customer']]</span>
+                <span class="reporter-method-output">Verifying Pop up display message</span>
+                <span class="reporter-method-output">click on Ok on pop [[ChromeDriver: chrome on WINDOWS (c2680e2238a115f44a42fe5d5278cbcd)] -> xpath: //input[@placeholder = 'First Name']]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bankManagerShouldOpenAccountSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Enter name in the First Name Field [[ChromeDriver: chrome on WINDOWS (2a52811eb06ba7f529c4daea8aae2088)] -> xpath: //input[@placeholder = 'First Name']]</span>
+                <span class="reporter-method-output">Enter surname in the Last Name Field [[ChromeDriver: chrome on WINDOWS (2a52811eb06ba7f529c4daea8aae2088)] -> xpath: //input[@placeholder = 'Last Name']]</span>
+                <span class="reporter-method-output">Enter postcode in the Postcode Field [[ChromeDriver: chrome on WINDOWS (2a52811eb06ba7f529c4daea8aae2088)] -> xpath: //input[@placeholder = 'Post Code']]</span>
+                <span class="reporter-method-output">Click on Add Customer button [[ChromeDriver: chrome on WINDOWS (2a52811eb06ba7f529c4daea8aae2088)] -> xpath: //button[text()= 'Add Customer']]</span>
+                <span class="reporter-method-output">click on Ok on pop [[ChromeDriver: chrome on WINDOWS (2a52811eb06ba7f529c4daea8aae2088)] -> xpath: //input[@placeholder = 'First Name']]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Bank_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Bank_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bank.testsuite.BankTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">2711 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bankManagerShouldAddCustomerSuccessfully</span>
+                <span class="method-start">2713 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3911 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">10594 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bankManagerShouldOpenAccountSuccessfully</span>
+                <span class="method-start">10595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11578 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">13956 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">customerShouldDepositMoneySuccessfully</span>
+                <span class="method-start">13958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15349 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15997 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">18157 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">customerShouldLoginAndLogoutSuccessfully</span>
+                <span class="method-start">18158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19243 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19884 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">21620 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">customerShouldWithdrawMoneySuccessfully</span>
+                <span class="method-start">21621 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28052 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
